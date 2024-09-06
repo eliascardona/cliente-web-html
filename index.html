@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="Content-Type" content="text/html">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="./css/index.css">
+    <title>Servicio MVC con Javascript y Postgre SQL</title>
+</head>
+<body class="body">
+    <main style="display:grid;width:100%;">
+        <h3>Crear una nueva pelicula en la base de datos</h3>
+        <div class="card">
+            <form id="form">
+                <label for="pelicula_id">Id de Pelicula:</label>
+                <input type="text" name="pelicula_id" placeholder="pelicula_id">
+                <br>
+                <label for="nombre">Nombre:</label>
+                <input type="text" name="nombre" placeholder="nombre">
+                <br>
+                <button 
+                    type="submit"
+                    class="formBtn"
+                >
+                    crear
+                </button>
+            </form>
+        </div>
+        <div class="card">
+            <button 
+                type="button"
+                id="leerBtn"
+                class="formBtn"
+            >
+                obtener peliculas de BD
+	    	</button>
+
+            <span id="arayHere"></span>
+            <span id="respHere"></span>
+        </div>
+    <main>
+    <script src="./js/index.js" defer></script>
+</body>
+</html>
